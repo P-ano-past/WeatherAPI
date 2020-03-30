@@ -9,31 +9,47 @@
     
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                Welcome to Weather
-            </div>
-        </div>
-        <div class="row">
-            <div class="col"> 
-              <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="City name:" aria-label="city-search" id="city-search" aria-describedby="button-addon2">
-                <div class="input-group-append">
-                  <button class="btn btn-outline-secondary" type="button" id="search-btn">Button</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-                7 day forecast:
-                <div id="forecast-output">
-
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        Welcome to Weather
+      </div>
     </div>
+  <div class="row">
+    <div class="col"> 
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="City name:" aria-label="city-search" id="city-search" aria-describedby="button-addon2">
+      </div>      
+    </div>
+  
+  <div class="col">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="State:" aria-label="state-search" id="state-search" aria-describedby="button-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="submit-btn">Submit</button>
+      </div>
+    </div>      
+  </div>
+</div>  
+<div class="row">
+  <div class='col'>
+      <h2 > Results for <p class="city-name"></p></h2>
+  </div>  
+</div>  
+<div class="row">
+  <div class="col">
+    Current weather: <p id="current-weather"></p>
+  </div>
+  <div class="col">
+    <p id='predicted-date'> <p id="predicted-weather"></p>
+  </div>
+  <div class="col">
+    <p id='predicted-date1'><p id="predicted-weather1"></p>
+  </div>
+</div>
+
+      
+  </div>
 
 
 
