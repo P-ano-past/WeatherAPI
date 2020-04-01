@@ -2,6 +2,9 @@ $(document).ready(function(){
     const apiKey = 'f591788ddd6dd308daca51bb8ef81a2b';
     // let cityName = 'riverside'
     // let state = $('#state-search').val()
+    let moment = require('moment');
+    let today = moment()
+    console.log(today.format())
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(displayLocationInfo);
@@ -60,21 +63,7 @@ $(document).ready(function(){
 
         
         $.get(urlFut, function(response) {
-            let unix_timestamp = 1549312452
-            // Create a new JavaScript Date object based on the timestamp
-            // multiplied by 1000 so that the argument is in milliseconds, not seconds.
-            var date = new Date(unix_timestamp * 1000);
-            // Hours part from the timestamp
-            var hours = date.getHours();
-            // Minutes part from the timestamp
-            var minutes = "0" + date.getMinutes();
-            // Seconds part from the timestamp
-            var seconds = "0" + date.getSeconds();
 
-            // Will display time in 10:30:23 format
-            var formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
-
-            console.log(formattedTime);
 
             console.log(response)
             $('#predicted-date').append(response.list[0].dt_txt)
