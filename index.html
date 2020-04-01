@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Weather API</title>
-    
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/userinfo/1.1.0/userinfo.min.js"></script>
+
 </head>
 <body>
   <div class="container">
@@ -32,14 +33,15 @@
   </div>
 </div>  
 <div class="row">
-  <div class='col'>
-      <h2 > Results for <p class="city-name"></p></h2>
-  </div>  
+  <div class="col">
+    Current weather for <h3><p class="city-name"></p></h3> <h4><p id="current-weather"></p></h4>
+  </div>
+  
 </div>  
 <div class="row">
-  <div class="col">
-    Current weather: <p id="current-weather"></p>
-  </div>
+  <div class='col'>
+    <h2 > Results for <p id="searched-city"></p></h2>
+</div>  
   <div class="col">
     <p id='predicted-date'> <p id="predicted-weather"></p>
   </div>
