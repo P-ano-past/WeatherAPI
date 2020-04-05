@@ -6,9 +6,8 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Weather API</title>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/userinfo/1.1.0/userinfo.min.js"></script>
-    <script src="bundle.js"></script>
     
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/userinfo/1.1.0/userinfo.min.js"></script>    
 </head>
 <body>
   <div class="container">
@@ -33,26 +32,56 @@
     </div>      
   </div>
 </div>  
-<div class="row">
-  <div class="col">
-    Current weather for <h3><p class="city-name"></p></h3> <h4><p id="current-weather"></p></h4>
-  </div>
-  
-</div>  
+
+    <div class="row">
+      <div class="col-sm">
+          <h3><p id="current-city-name"></p></h3>
+          <p id=current-date></p>
+          <p id=current-time></p>
+      </div>  
+      <div class="col-sm">
+          <h5><p id="current-weather"></p></h5>
+          <h6><p id="current-main"></p></h6>
+          <h6><p id="current-description"></p></h6>
+      </div>
+      <div class="col-sm">
+        <h6><p id="current-feels"></p></h6>
+        <h6><p id="current-low"></p></h6>
+        <h6><p id="current-high"></p></h6>
+        <h6><p id="current-pressure"></p></h6>
+        <h6><p id="current-humid"></p></h6>  
+      </div>
+    </div>
+
+
 <div class="row">
   <div class='col'>
-    <h2 > Results for <p id="searched-city"></p></h2>
-</div>  
+      <h3><p id='predicted-name'></p></h3>
+      <p id="predicted-weather"></p>
+      <p id="predicted-main"></p>
+      <p id="predicted-description"></p>
+      <p id="predicted-feels"></p>
+      <p id='predicted-low'></p>
+      <p id='predicted-high'></p>
+      <p id='predicted-pressure'></p>
+      <p id='predicted-humid'></p>
+  </div>  
   <div class="col">
-    <p id='predicted-date'> <p id="predicted-weather"></p>
-  </div>
-  <div class="col">
-    <p id='predicted-date1'><p id="predicted-weather1"></p>
+    <p id='time'> </p>
+    <h3><p id='predicted-name1'></p></h3>
+    <p id="predicted-weather1"></p>
+    <p id="predicted-main1"></p>
+    <p id="predicted-description1"></p>
+    <p id="predicted-feels1"></p>
+    <p id='predicted-low1'></p>
+    <p id='predicted-high1'></p>
+    <p id='predicted-pressure1'></p>
+    <p id='predicted-humid1'></p>
   </div>
 </div>
 
       
-  </div>
+</div>
 
 
 
@@ -61,6 +90,6 @@
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="bundle.js"></script>
 </body>
 </html>
