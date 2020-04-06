@@ -25,7 +25,7 @@ $(document).ready(function(){
             $('#current-city-name').append(data.name)  
             $('#current-weather').append("Current weather: " + Math.round(data.main.temp.toString()) + '&deg;F')
             $('#current-main').append(data.weather[0].main)
-            $('#current-description').append("<img src='http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png'>" + data.weather[0].description)
+            $('#current-description').append("<img src='https://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png'>" + data.weather[0].description)
             $('#current-feels').append('Feels like: '+ Math.round(data.main.feels_like) + '&deg;F')
             $('#current-low').append('Low: '+ Math.round(data.main.temp_min) + '&deg;F')
             $('#current-high').append('High: ' + Math.round(data.main.temp_max) + '&deg;F')
