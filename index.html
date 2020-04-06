@@ -10,29 +10,20 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/userinfo/1.1.0/userinfo.min.js"></script>    
 </head>
 <body>
-  <div class="container">
+<div class="container">
     <div class="row">
       <div class="col">
-        Welcome to Weather
+        Welcome to your Weather Dashboard
       </div>
     </div>
-  <div class="row">
-    <div class="col"> 
-      <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="City name:" aria-label="city-search" id="city-search" aria-describedby="button-addon2">
-      </div>      
-    </div>
-  
-  <div class="col">
-    <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="State:" aria-label="state-search" id="state-search" aria-describedby="button-addon2">
-      <div class="input-group-append">
-        <button class="btn btn-outline-secondary" type="button" id="submit-btn">Submit</button>
-      </div>
-    </div>      
-  </div>
-</div>  
-
+      <div class="row">
+        <div class="col"> 
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="City name:" aria-label="city-search" id="city-search" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="submit-btn">Submit</button>
+          </div>      
+        </div>
+      </div> 
     <div class="row">
       <div class="col-sm">
           <h3><p id="current-city-name"></p></h3>
@@ -52,35 +43,60 @@
         <h6><p id="current-humid"></p></h6>  
       </div>
     </div>
-
-
-<div class="row">
-  <div class='col'>
-      <h3><p id='predicted-name'></p></h3>
-      <p id="predicted-weather"></p>
-      <p id="predicted-main"></p>
-      <p id="predicted-description"></p>
-      <p id="predicted-feels"></p>
-      <p id='predicted-low'></p>
-      <p id='predicted-high'></p>
-      <p id='predicted-pressure'></p>
-      <p id='predicted-humid'></p>
-  </div>  
-  <div class="col">
-    <p id='time'> </p>
-    <h3><p id='predicted-name1'></p></h3>
-    <p id="predicted-weather1"></p>
-    <p id="predicted-main1"></p>
-    <p id="predicted-description1"></p>
-    <p id="predicted-feels1"></p>
-    <p id='predicted-low1'></p>
-    <p id='predicted-high1'></p>
-    <p id='predicted-pressure1'></p>
-    <p id='predicted-humid1'></p>
-  </div>
-</div>
-
-      
+    <div class="row">
+      <div class='col'>
+        <h3><p id='predicted-name'></p></h3>
+      </div>
+    </div>
+ <div class="row">
+    <div class='col'>
+      <p id='predicted-day' class="predicted-day"> </p>
+          <p id="predicted-weather"></p>
+          <p id="predicted-main"></p>
+          <p id="predicted-description"></p>
+          <p id="predicted-feels"></p>
+          <p id='predicted-low'></p>
+          <p id='predicted-high'></p>
+          <p id='predicted-pressure'></p>
+          <p id='predicted-humid'></p>
+    </div>  
+      <div class="col">
+        <p id='predicted-day1' class="predicted-day"> </p>
+        <h3><p id='predicted-name1'></p></h3>
+        <p id="predicted-weather1"></p>
+        <p id="predicted-main1"></p>
+        <p id="predicted-description1"></p>
+        <p id="predicted-feels1"></p>
+        <p id='predicted-low1'></p>
+        <p id='predicted-high1'></p>
+        <p id='predicted-pressure1'></p>
+        <p id='predicted-humid1'></p>
+      </div>
+      <div class="col">
+        <p id='predicted-day2' class="predicted-day"> </p>
+        <h3><p id='predicted-name2'></p></h3>
+        <p id="predicted-weather2"></p>
+        <p id="predicted-main2"></p>
+        <p id="predicted-description2"></p>
+        <p id="predicted-feels2"></p>
+        <p id='predicted-low2'></p>
+        <p id='predicted-high2'></p>
+        <p id='predicted-pressure2'></p>
+        <p id='predicted-humid2'></p>
+      </div>
+      <div class="col">
+        <p id='predicted-day3' class="predicted-day"> </p>
+        <h3><p id='predicted-name3'></p></h3>
+        <p id="predicted-weather3"></p>
+        <p id="predicted-main3"></p>
+        <p id="predicted-description3"></p>
+        <p id="predicted-feels3"></p>
+        <p id='predicted-low3'></p>
+        <p id='predicted-high3'></p>
+        <p id='predicted-pressure3'></p>
+        <p id='predicted-humid3'></p>
+      </div>
+  </div> 
 </div>
 
 
