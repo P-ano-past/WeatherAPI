@@ -19,7 +19,7 @@ $(document).ready(function(){
       function displayLocationInfo(position) {
         const lng = position.coords.longitude;
         const lat = position.coords.latitude;
-        const url = 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lng + '&units=imperial&appid=' + apiKey;
+        const url = 'https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lng + '&units=imperial&appid=' + apiKey;
 
         $.get(url, function(data){
             // current
@@ -44,7 +44,7 @@ $(document).ready(function(){
         let cityName = $('#city-search').val()
         // let cityName = "moreno Valley"
         let state = "us"
-        const url = 'http://api.openweathermap.org/data/2.5/weather?q=' + cityName + ',' + state + '&units=imperial&appid=' + apiKey;
+        const url = 'https://api.openweathermap.org/data/2.5/weather?q=' + cityName + ',' + state + '&units=imperial&appid=' + apiKey;
 
         $('#predicted-name').empty()
         $('#predicted-day0').empty()
@@ -108,7 +108,7 @@ $(document).ready(function(){
             $('#predicted-humid').append('Humidity: ' + Math.round(response1.main.humidity) + '&#37;')
         })
 
-        const urlFut = 'http://api.openweathermap.org/data/2.5/forecast?q=' + cityName + ',' + state +'&units=imperial&appid=' + apiKey;
+        const urlFut = 'https://api.openweathermap.org/data/2.5/forecast?q=' + cityName + ',' + state +'&units=imperial&appid=' + apiKey;
 
         $.get(urlFut, function(response) {
             console.log(response)
