@@ -46,7 +46,7 @@ $(document).ready(function(){
         const url = 'http://api.openweathermap.org/data/2.5/weather?q=' + cityName + ',' + state + '&units=imperial&appid=' + apiKey;
 
         $('#predicted-name').empty()
-        $('#predicted-day').empty()
+        $('#predicted-day0').empty()
         $('#predicted-day1').empty()
         $('#predicted-day2').empty()
         $('#predicted-day3').empty()
@@ -95,7 +95,7 @@ $(document).ready(function(){
        
 
         $.get(url, function(response1){
-            $('#predicted-day').append("Curently:")
+            $('#predicted-day0').append("Curently:")
             $('#predicted-name').append(response1.name)
             $('#predicted-weather').append("Current weather: " + Math.round(response1.main.temp.toString()) + '&deg;F')
             $('#predicted-main').append(response1.weather[0].main)

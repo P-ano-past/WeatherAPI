@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet">
     <title>Weather API</title>
     
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/userinfo/1.1.0/userinfo.min.js"></script>    
 </head>
 <body>
-<div class="container">
+<div class="container" id="main-cont">
     <div class="row">
-      <div class="col">
+      <div class="col" id="title-tag">
         Welcome to your Weather Dashboard
       </div>
     </div>
@@ -25,17 +26,17 @@
         </div>
       </div> 
     <div class="row">
-      <div class="col-sm">
+      <div class="col-sm" id="sec1">
           <h3><p id="current-city-name"></p></h3>
           <p id=current-date></p>
           <p id=current-time></p>
       </div>  
-      <div class="col-sm">
+      <div class="col-sm" id="sec2">
           <h5><p id="current-weather"></p></h5>
           <h6><p id="current-main"></p></h6>
           <h6><p id="current-description"></p></h6>
       </div>
-      <div class="col-sm">
+      <div class="col-sm" id="sec3">
         <h6><p id="current-feels"></p></h6>
         <h6><p id="current-low"></p></h6>
         <h6><p id="current-high"></p></h6>
@@ -43,14 +44,15 @@
         <h6><p id="current-humid"></p></h6>  
       </div>
     </div>
+    <div class="container" id="search-output">
     <div class="row">
       <div class='col'>
         <h3><p id='predicted-name'></p></h3>
       </div>
     </div>
  <div class="row">
-    <div class='col'>
-      <p id='predicted-day' class="predicted-day"> </p>
+    <div class='col search-item'>
+      <p id='predicted-day0' class="predicted-day"> </p>
           <p id="predicted-weather"></p>
           <p id="predicted-main"></p>
           <p id="predicted-description"></p>
@@ -60,7 +62,7 @@
           <p id='predicted-pressure'></p>
           <p id='predicted-humid'></p>
     </div>  
-      <div class="col">
+      <div class="col search-item">
         <p id='predicted-day1' class="predicted-day"> </p>
         <h3><p id='predicted-name1'></p></h3>
         <p id="predicted-weather1"></p>
@@ -72,7 +74,7 @@
         <p id='predicted-pressure1'></p>
         <p id='predicted-humid1'></p>
       </div>
-      <div class="col">
+      <div class="col search-item">
         <p id='predicted-day2' class="predicted-day"> </p>
         <h3><p id='predicted-name2'></p></h3>
         <p id="predicted-weather2"></p>
@@ -84,7 +86,7 @@
         <p id='predicted-pressure2'></p>
         <p id='predicted-humid2'></p>
       </div>
-      <div class="col">
+      <div class="col search-item">
         <p id='predicted-day3' class="predicted-day"> </p>
         <h3><p id='predicted-name3'></p></h3>
         <p id="predicted-weather3"></p>
@@ -97,6 +99,12 @@
         <p id='predicted-humid3'></p>
       </div>
   </div> 
+  <div class="row">
+    <div class='col' id="base">
+      
+    </div>
+  </div>
+</div>
 </div>
 
 
